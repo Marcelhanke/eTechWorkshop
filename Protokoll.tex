@@ -1,16 +1,12 @@
-\documentclass[a4paper,12pt]{article}
-%\documentclass[a4paper,12pt]{scrartcl}
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
 
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{listings}
 
 \title{}
 \author{}
 \date{}
-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
 \pdfinfo{%
   /Title    (Messwerterfassung und regenerative Energieerzeugung)
   /Author   (Marcel Hanke,)
@@ -23,86 +19,6 @@
 \begin{document}
 \maketitle
 
-\section{Literaturrecherche}
-\subsection{Wie funktioniert die Gewinnung elektrischer Energie mit Hilfe von Photovoltaik?}
 
-\subsection{Was versteht man unter dem Maximum-Power-Point (MPP) einer Solarzelle?}
-Der Punkt unter welchem die Solarzelle bei der aktueller Bestrahlung und Temperatur die Maximale Leistung abgibt. Um diesen Punkt möglichst optimal zu treffen muss entweder die Stromstärke oder die Spannung welche an der Solarzelle anliegt korrigiert werden.
-
-\subsection{Welche Möglichkeiten zur Speicherung von (regenerativ erzeugter) elektrischer Energie gibt es?}
-Hier gibt es eine viel Zahl an Möglichkeiten (vier in zunehmender Kapazität):
-\begin{itemize}
- \item Kondensator
- \item Batterien/Akkus (Chemischer Prozess)
- \item Elektrolyse/Brennstoffzelle (Wasserstoffspeicherung)
- \item Wasserspeicherkraftwerke 
-\end{itemize}
-
-
-\section{Bestimmung des Maximum-Power-Points}
-Bei der Bestimmung des Maximum-Power-Points (im weiteren Dokument MPP genannt) kommt folgende Formel zu Berechnung der Leistung zum Einsatz:\newline
-\large \begin{center}
-        $P = \frac{U^2}{R}$
-       \end{center}
-\small \begin{itemize}
-    \item P = Power = Leistung (in Watt)
-    \item U = Spannung (in Volt)
-    \item R = Wiederstand (in Ohm)
-\end{itemize} 
-\normalsize Die erste Lichtquelle ist eine 200W Glühbirne, hier wurden folgende Spannungen gemessen:\newline
- \begin{tabular}{ll}
-  \textbf{Wiederstand} & \textbf{Stannung} \\
-  100 $ \Omega $ & 0,516 V \\
-  220 $ \Omega $ & 1,160 V \\
-  270 $ \Omega $ & 1,547 V \\
-  470 $ \Omega $ & 2,578 V \\
-  1,2 k$ \Omega $ & 4,770 V \\
-  8,2 k$ \Omega $ & 5,285 V \\
-  10 k$ \Omega $ & 5,543 V \\
-  68 k$ \Omega $ & 5,414 V \\
-  100 k$ \Omega $ & 5,414 V \\
-  1 M$ \Omega $ & 5,414 V \\
- \end{tabular}
-
-Nach der Berechnung der Leistung erhalten wir folgende Kurve und ein MMP von 0,01896 W:\newline
-\includegraphics{200WGB}
-\newline \newline
-Die zweite Lichtquelle ist eine 60W Glühbirne und hier erhalten wir die folgende Werte:\newline
- \begin{tabular}{ll}
-  \textbf{Wiederstand} & \textbf{Stannung} \\
-  100 $ \Omega $ & 0 V\\
-  220 $ \Omega $ & 0,129 V\\
-  270 $ \Omega $ & 0,129 V\\
-  470 $ \Omega $ & 0,387 V\\
-  1,2 k$ \Omega $ & 1,031 V\\
-  8,2 k$ \Omega $ & 4,254 V \\
-  10 k$ \Omega $ & 4,512 V \\
-  68 k$ \Omega $ & 4,641 V \\
-  100 k$ \Omega $ & 4,641 V \\
-  1 M$ \Omega $ & 4,641 V \\
- \end{tabular}
-Nach der Berechnung der Leistung erhalten wir folgende Kurve und ein MMP von 0,002207 W:\newline
-\includegraphics{60WGB}
-\newline \newline
-
-\subsection{Solare Wechselrichter}
-In SolarenWechselrichtern sind MPP-Tracker installiert, welche eine Regelung zur maximalen Leistungsausbeute ermöglichen. Dies ist nötig, da die Solarzelle bei unterschiedlichen Bestrahlungstärken unterschiedliche optimale Betriebspunkte besitzt.
-Das Vorgehen ist hier wie folgt:
-\begin{enumerate}
- \item Speichern der aktuellen Leistung
- \item Änderung der Steuergröße
- \item kleine Pause
- \item Vergleich der Leistung mit der zuvor gemessenen, wenn die Aktuelle größer ist, wird diese gespeichert
- \item Korrektur der Steuergröße
- \item Fortfahren mit Punkt 3
-\end{enumerate}
-~\cite{MPPT}
-
-\bibliography{verzeichnis1}
-\bibliographystyle{plain}
-
-\appendix
-\section{Leistungsskript zu 2.2}
-\lstinputlisting{Leistungsscript.m}
 
 \end{document}
