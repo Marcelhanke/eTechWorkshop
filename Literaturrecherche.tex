@@ -1,30 +1,78 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath}
-
-\begin{document}
-1.Literaturrecherche\\
-Wie funktioniert die Gewinnung elektrischer Energie mit Hilfe von Photovoltaik?\\
+\section{Literaturrecherche}
+\textbf{Wie funktioniert die Gewinnung elektrischer Energie mit Hilfe von Photovoltaik?\\}
 Um eine Gewinnung elektrischer Energie mithilfe von Photovoltaik zu ermöglichen, braucht es unter anderem eine Solarzelle. Betrachten wir zum einfacheren Verständnis eine Photodiode, die in ihrer Wirkungsweise einer Solarzelle gleichkommt. 
 Die Grundlage für die Photovoltaiktechnik liefert uns das zweite Bohrsche Postulat: "Der Übergang eines Elektrons von einer Schale zur anderen erfolgt unter Emission oder Absorption von elektromagnetischer Strahlung." Sprich: Trifft Licht auf ein Elektron, so wird dieses auf ein anderes Energieniveau angehoben. 
 
 Stellen wir uns die Photodiode so vor, als bestünde sie aus zwei aneinandergesetzten Kristallen. Der eine n-dotiert (Elektronenüberschuss) und der andere p-dotiert (Elektronenmangel). Fügt man diese nun zusammen, so entsteht ein Gleichgewicht am Übergang, denn die überschüssigen Elektronen werden von den "Elektronenlöchern" im p-dotierten Teil angezogen. Zurück bleibt eine ortsfeste positive Ladung im n-dotierten Raum und eine ortsfeste negative Ladung im p-dotierten Raum. Diesen Ausgleich bezeichnet man elektrisches Feld. Durch die steigende Anzahl an ortsfesten Ladungen entsteht der sog. Diffusionsstrom. Dieser Strom und das el. Feld heben sich gegenseitig auf.
-Durch das einfallende Licht werden nun die Elektronen im el. Feld zur n-dotierten Seite befördert. Bringt man jeweils einen Kontakt an die n-und p-dotierte Seite, lässt sich der sog. Photostrom abgreifen. 
-Was versteht man unter dem Maximum-Power-Point (MPP) einer Solarzelle?\\
-Eine Solarzelle kann je nach Betriebsbereich unterschiedliche Leistung abgeben. Der Punkt an dem die maximale Leistung erbracht wird, nennt man MAXIMUM-POWER-POINT (MPP). Da die Leistung das Produkt aus der Spannung U und dem Strom I ist, lässt sich aus der grafischen Darstellung der MMP als die größtmögliche Fläche unter dem Grafen der Leistung darstellen.
-Welche Möglichkeiten zur Speicherung von (regenerativ erzeugter) elektrischer Energie
-gibt es?\\
-Hochenergiespeicher (Druckluftspeicher, Energiespeicherkraftwerke), Hochleistungsspeicher (Elektrochemische Doppelschichtkondensatoren, Schwungräder, Supraleitende Spulen), Elektrochemische Speichersysteme (Batterien, Wasserstoff...), Thermische Speicher\\
-
-Solare Wechselrichter werden zwischen Solaranlagen und das Stromnetz geschaltet.
-Warum bestimmen Solare Wechselrichter den MPP und wie häufig sollte das ein Wechselrichter
-tun? Beantworten Sie diese Frage bitte in der Dokumentation und gehen Sie
-dabei auf den Grund des Verfahrens ein und nicht auf die praktische Realisierung desselben.\\
+Durch das einfallende Licht werden nun die Elektronen im el. Feld zur n-dotierten Seite befördert. Bringt man jeweils einen Kontakt an die n-und p-dotierte Seite, lässt sich der sog. Photostrom abgreifen.\\
  
+\textbf{Was versteht man unter dem Maximum-Power-Point (MPP) einer Solarzelle?\\}
+Eine Solarzelle kann je nach Betriebsbereich unterschiedliche Leistung abgeben. Der Punkt an dem die maximale Leistung erbracht wird, nennt man MAXIMUM-POWER-POINT (MPP). Da die Leistung das Produkt aus der Spannung U und dem Strom I ist, lässt sich aus der grafischen Darstellung der MMP als die größtmögliche Fläche unter dem Grafen der Leistung darstellen.\\
 
+\textbf{Welche Möglichkeiten zur Speicherung von (regenerativ erzeugter) elektrischer Energie
+gibt es?\\}
+\begin{itemize}
+\item Hochenergiespeicher (Druckluftspeicher, Energiespeicherkraftwerke)
+\end{itemize}
+\begin{itemize}
+\item Hochleistungsspeicher (Elektrochemische Doppelschichtkondensatoren, Schwungräder, Supraleitende Spulen)
+\end{itemize} 
+\begin{itemize}
+\item Elektrochemische Speichersysteme (Batterien, mithilfe von Wasserstoff)
+\end{itemize}
+\begin{itemize}
+\item Thermische Speicher
+\end{itemize}
 
+\section{Energiespeicherung}
+\subsection{Berechnungen}
+\textbf{Theorie zum Laden und Entladen eines Kondensators:\\}
+Ladevorgang\\
+Betrachten wir eine Serienschaltung mit einer Gleichstromquelle, einem Schalter, einem Vorwiderstand und einem Kondensator. 
+Zum Zeitpunkt $t = 0$ ist der Kondensator ungeladen. Das heißt, dass die volle Spannung $U$ am Widerstand anliegt. Durch ihn fließt der Ladestrom $I_C$. Nur zu diesem Zeitpunkt ist der Ladestrom maximal.\\
+Nun wird der Kondensator durch den Ladestrom $I_C$ aufgeladen. Somit steigt auch die Spannung $U_C$ am Kondensator an, während gleichzeitig die Spannung $U_R$ am Widerstand, sowie der Ladestrom $I_C$ sinkt. Folgender Zusammenhang lässt sich verdeutlichen:\\
+\begin{itemize}
+\item $I_C$ sinkt
+\end{itemize}
+\begin{itemize}
+\item $U_R $ sinkt
+\end{itemize}
+\begin{itemize}
+\item $U_C $ steigt
+\end{itemize}
+Die explizite mathematische Darstellung für das Laden des Kondensators sieht folgendermaßen aus:
+\begin{align*}
+U_C &= U \cdot (1 - e^{t/(RC)})\\
+I &= I_0 \cdot e^{-(t/(RC))}\\
+\text{mit} \ U_C &= \text{Kondensatorspannung}\\
+U &= \text{Spannung}\\
+t &= \text{Zeit}\\
+R &= \text{ohmscher Widerstand}\\
+C &= \text{Kapazität}\\
+I &= \text{Stromstärke}\\
+I_0 &= \text{Anfangsstromstärke]}\\
+\end{align*}
+Entladevorgang\\
+Zum Zeitpunkt t = 0 ist der Kondensator voll geladen, somit liegt die Spannung $U$ am Widerstand $R$ mit umgekehrter Polarität. Es fließt ein Strom $I_C$. Nun wird der Kondensator entladen. Die Spannung $U_C$ sinkt sowie $U_R$ (betragsweise). Somit wird auch der Strom $I_C$ betragsweise kleiner.\\
+\begin{itemize}
+\item $I_C$ sinkt
+\end{itemize}
+\begin{itemize}
+\item $U_R$
+\end{itemize}
+\begin{itemize}
+\item $U_C$
+\end{itemize}
+Die explizite mathematische Schreibweise für das Laden des Kondensators sieht folgendermaßen aus:
+\begin{align*}
+U_C &= U \cdot e^{-(t/(RC))}\\
+I &= -I_0 \cdot e^{-(t/(RC))}\\
+\text{mit} \ U_C &= \text{Kondensatorspannung}\\
+U &= \text{Spannung}\\
+t &= \text{Zeit}\\
+R &= \text{ohmscher Widerstand}\\
+C &= \text{Kapazität}\\
+I &= \text{Stromstärke}\\
+I_0 &= \text{Anfangsstromstärke}\\
+\end{align*}
 
-
-\end{document}
