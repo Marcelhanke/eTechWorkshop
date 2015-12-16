@@ -1,7 +1,10 @@
 Wiederstand = [100, 220, 270, 470, 1200, 8200, 10000, 100000, 68000, 1000000]
 Spannung200W=[0.516, 1.160, 1.547, 2.578, 4.770, 5.285, 5.543, 5.414, 5.414, 5.414]
 Spannung60W=[0, 0.129, 0.129, 0.387, 1.031, 4.254, 4.512 ,4.641, 4.641, 4.641]
+SpannungOSRAML6W640 = [0.002156768,0.081009514, 0.105897957, 0.16470794, 0.42908664, 2.64257, 2.503277, 4.19842, 4.24710, 4.33724]
 Power200W=(Spannung200W.*Spannung200W)./Wiederstand
 Power60W=(Spannung60W.*Spannung60W)./Wiederstand
+PowerOSRAML6W640=(SpannungOSRAML6W640.*SpannungOSRAML6W640)./Wiederstand
 plot(Spannung200W, Power200W)
 plot(Spannung60W, Power60W)
+plot(Spannung60W, PowerOSRAML6W640)
