@@ -1,22 +1,194 @@
 \section{Literaturrecherche}
-Wie funktioniert die Gewinnung elektrischer Energie mit Hilfe von Photovoltaik?\\
+\textbf{Wie funktioniert die Gewinnung elektrischer Energie mit Hilfe von Photovoltaik?\\}
 Um eine Gewinnung elektrischer Energie mithilfe von Photovoltaik zu ermöglichen, braucht es unter anderem eine Solarzelle. Betrachten wir zum einfacheren Verständnis eine Photodiode, die in ihrer Wirkungsweise einer Solarzelle gleichkommt. 
 Die Grundlage für die Photovoltaiktechnik liefert uns das zweite Bohrsche Postulat: "Der Übergang eines Elektrons von einer Schale zur anderen erfolgt unter Emission oder Absorption von elektromagnetischer Strahlung." Sprich: Trifft Licht auf ein Elektron, so wird dieses auf ein anderes Energieniveau angehoben. 
 
 Stellen wir uns die Photodiode so vor, als bestünde sie aus zwei aneinandergesetzten Kristallen. Der eine n-dotiert (Elektronenüberschuss) und der andere p-dotiert (Elektronenmangel). Fügt man diese nun zusammen, so entsteht ein Gleichgewicht am Übergang, denn die überschüssigen Elektronen werden von den "Elektronenlöchern" im p-dotierten Teil angezogen. Zurück bleibt eine ortsfeste positive Ladung im n-dotierten Raum und eine ortsfeste negative Ladung im p-dotierten Raum. Diesen Ausgleich bezeichnet man elektrisches Feld. Durch die steigende Anzahl an ortsfesten Ladungen entsteht der sog. Diffusionsstrom. Dieser Strom und das el. Feld heben sich gegenseitig auf.
-Durch das einfallende Licht werden nun die Elektronen im el. Feld zur n-dotierten Seite befördert. Bringt man jeweils einen Kontakt an die n-und p-dotierte Seite, lässt sich der sog. Photostrom abgreifen. 
-Was versteht man unter dem Maximum-Power-Point (MPP) einer Solarzelle?\\
-Eine Solarzelle kann je nach Betriebsbereich unterschiedliche Leistung abgeben. Der Punkt an dem die maximale Leistung erbracht wird, nennt man MAXIMUM-POWER-POINT (MPP). Da die Leistung das Produkt aus der Spannung U und dem Strom I ist, lässt sich aus der grafischen Darstellung der MMP als die größtmögliche Fläche unter dem Grafen der Leistung darstellen.
-Welche Möglichkeiten zur Speicherung von (regenerativ erzeugter) elektrischer Energie
-gibt es?\\
-Hochenergiespeicher (Druckluftspeicher, Energiespeicherkraftwerke), Hochleistungsspeicher (Elektrochemische Doppelschichtkondensatoren, Schwungräder, Supraleitende Spulen), Elektrochemische Speichersysteme (Batterien, Wasserstoff...), Thermische Speicher\\
+Durch das einfallende Licht werden nun die Elektronen im el. Feld zur n-dotierten Seite befördert. Bringt man jeweils einen Kontakt an die n-und p-dotierte Seite, lässt sich der sog. Photostrom abgreifen.\\
+ 
+\textbf{Was versteht man unter dem Maximum-Power-Point (MPP) einer Solarzelle?\\}
+Eine Solarzelle kann je nach Betriebsbereich unterschiedliche Leistung abgeben. Der Punkt an dem die maximale Leistung erbracht wird, nennt man MAXIMUM-POWER-POINT (MPP). Da die Leistung das Produkt aus der Spannung U und dem Strom I ist, lässt sich aus der grafischen Darstellung der MMP als die größtmögliche Fläche unter dem Grafen der Leistung darstellen.\\
 
-Solare Wechselrichter werden zwischen Solaranlagen und das Stromnetz geschaltet.
-Warum bestimmen Solare Wechselrichter den MPP und wie häufig sollte das ein Wechselrichter
-tun? Beantworten Sie diese Frage bitte in der Dokumentation und gehen Sie
-dabei auf den Grund des Verfahrens ein und nicht auf die praktische Realisierung desselben.\\
+\textbf{Welche Möglichkeiten zur Speicherung von (regenerativ erzeugter) elektrischer Energie
+gibt es?\\}
+\begin{itemize}
+\item Hochenergiespeicher (Druckluftspeicher, Energiespeicherkraftwerke)
+\end{itemize}
+\begin{itemize}
+\item Hochleistungsspeicher (Elektrochemische Doppelschichtkondensatoren, Schwungräder, Supraleitende Spulen)
+\end{itemize} 
+\begin{itemize}
+\item Elektrochemische Speichersysteme (Batterien, mithilfe von Wasserstoff)
+\end{itemize}
+\begin{itemize}
+\item Thermische Speicher
+\end{itemize}
 
-Theorie zum Laden und Entladen eines Kondensators:\\
+\section{Bestimmung des Maximum-Power-Points}
+Die Bestimmung der Maximum-Power-Points (MMPs) wurden mit konstanter Bestrahlung, drei unterschiedlich starker Leuchtmittel, durchgeführt, die etwa im Abstand von 20-30 cm senkrecht über der Solarzelle ausgerichtet wurden. Folgende Leuchtmittel wurden verwendet:
+\begin{itemize}
+\item Glühbirne 60W/230V
+\end{itemize}
+\begin{itemize}
+\item Glühbirne 200W/230V
+\end{itemize}
+\begin{itemize}
+\item Osramlampe 6W
+\end{itemize}
+
+Zu aller erst wurden die Messergebnisse aus den drei Leuchtquellen ermittelt und festgehalten. Die nachfolgenden Tabellen zeigen die Messergebnisse.\\
+Für die erste Messung mit einer 200W Glühbirne ergeben sich folgende Messergebnisse:\\
+\begin{table}[htb]
+\centering
+\caption{Messwerte 200W Glühbirne}
+    \label{tab:Messwerte 200W Glühbirne}
+ \begin{tabular}{ll}
+  \textbf{Widerstandswert} & \textbf{Spannung} \\
+  100 $ \Omega $ & 0,516 V \\
+  220 $ \Omega $ & 1,160 V \\
+  270 $ \Omega $ & 1,547 V \\
+  470 $ \Omega $ & 2,578 V \\
+  1,2 k$ \Omega $ & 4,770 V \\
+  8,2 k$ \Omega $ & 5,285 V \\
+  10 k$ \Omega $ & 5,543 V \\
+  68 k$ \Omega $ & 5,414 V \\
+  100 k$ \Omega $ & 5,414 V \\
+  1 M$ \Omega $ & 5,414 V \\
+ \end{tabular}
+\end{table}
+
+Die nächste Messung erfolgte anhand einer 60W Glühbirne.
+\begin{table}
+\centering
+\caption{Messwerte 60W Glühbirne}
+\label{tab:Messwerte 60W Glühbirne}
+ \begin{tabular}{ll}
+  \textbf{Widerstand} & \textbf{Spannung} \\
+  100 $ \Omega $ & 0 V\\
+  220 $ \Omega $ & 0,129 V\\
+  270 $ \Omega $ & 0,129 V\\
+  470 $ \Omega $ & 0,387 V\\
+  1,2 k$ \Omega $ & 1,031 V\\
+  8,2 k$ \Omega $ & 4,254 V \\
+  10 k$ \Omega $ & 4,512 V \\
+  68 k$ \Omega $ & 4,641 V \\
+  100 k$ \Omega $ & 4,641 V \\
+  1 M$ \Omega $ & 4,641 V \\
+ \end{tabular}
+\end{table}
+
+Die letzte Messung mit einer 6W Osramlampe umfasst folgende Daten.
+\begin{table}
+\centering
+\caption{Messwerte 6W Osramlampe}
+\label{tab:Messwerte 6W Osramlampe}
+\begin{tabular}{ll}
+  \textbf{Widerstand} & \textbf{Spannung} \\
+  100 $ \Omega $ & 0.002\\
+  220 $ \Omega $ & 0.081 V\\
+  270 $ \Omega $ & 0.105 V\\
+  470 $ \Omega $ & 0.164 V\\
+  1,2 k$ \Omega $ & 0.429 V\\
+  8,2 k$ \Omega $ & 2.642 V \\
+  10 k$ \Omega $ & 2.503 V \\
+  68 k$ \Omega $ & 4.198 V \\
+  100 k$ \Omega $ & 4.247 V \\
+  1 M$ \Omega $ & 4.337 V \\
+ \end{tabular}
+\end{table}
+ 
+Als nächstes wurden die Widerstandswerte und von jeder Messung die Spannungswerte in Matlab importiert. Die daraus resultierende Leistung lässt sich mithilfe der $U = R \cdot I$, sowie der $P = U \cdot I$ Formel ausrechnen.\\
+Nachfolgend sieht man das Skript, das die Berechnungen, sowie die Plotte in Matlab zeigt.\\
+\begin{lstlisting}
+Widerstand = [100, 220, 270, 470, 1200, 8200, 10000, 68000, 100000, 1000000]
+Spannung200W=[0.516, 1.160, 1.547, 2.578, 4.770, 5.285, 5.543, 5.414, 5.414, 5.414]
+Spannung60W=[0, 0.129, 0.129, 0.387, 1.031, 4.254, 4.512 ,4.641, 4.641, 4.641]
+SpannungOSRAML6W640 = [0.002156768,0.081009514, 0.105897957, 0.16470794, 0.42908664, 2.64257, 2.503277, 4.19842, 4.24710, 4.33724]
+Power200W=(Spannung200W.*Spannung200W)./Widerstand
+Power60W=(Spannung60W.*Spannung60W)./Widerstand
+PowerOSRAML6W640=(SpannungOSRAML6W640.*SpannungOSRAML6W640)./Widerstand
+figure
+plot(Power200W,'--')
+xlabel('Widerstandswert [#]','FontSize',12)
+ylabel('Leistung [W]','FontSize',12)
+title('MPP 60W Glühbirne','FontSize',20)
+figure
+plot(Power60W, '--')
+xlabel('Widerstandswert [#]','FontSize',12)
+ylabel('Leistung [W]','FontSize',12)
+title('MPP 200W Glühbirne','FontSize',20)
+figure
+plot(PowerOSRAML6W640, '--')
+xlabel('Widerstandswert [#]','FontSize',12)
+ylabel('Leistung [W]','FontSize',12)
+title('MPP 6W Osramlampe','FontSize',20)
+\end{lstlisting}
+
+
+Aus diesem Skript gehen folgende Schaubilder hervor, wobei die Widerstandswerte aus der Tabelle 1 zu entnehmen sind.\\
+\begin{table}
+\centering
+\caption{Widerstandswerte}
+\label{tab:Widerstandswerte}
+\begin{tabular}{ll}
+  \textbf{Widerstandswert} & \textbf{Widerstand [k$\Omega$} \\
+  1  & 0.100\\
+  2  & 0.220\\
+  3  & 0.270\\
+  4  & 0.470\\
+  5  & 1.200\\
+  6  & 8.200\\
+  7  & 10.00\\
+  8  & 68.000\\
+  9  & 100.000\\
+  10 & 1000.000\\
+ \end{tabular}
+\end{table}
+
+\begin{center}
+\includegraphics[scale=1]{MPP200WGluehbirne}
+\end{center}
+Dem Schaubild ist zu entnehmen, dass der MPP überd dem Widerstandswert von 8,2k$\Omega$ liegt und einen Wert von ca. 0,002W aufweist.\\
+\begin{center}
+\includegraphics[scale=1]{MPP60WGluehbirne}
+\end{center}
+Das neiner 60W Glühlampe hat ihren MPP mit ca.0,012W über 1,2$k\Omega$\\
+\begin{center}
+\includegraphics[scale=1]{MPP6WOSRAM}
+\end{center}
+Das letzte Schaubild zeigt die Leistungskurve einer 6W Osramlampe. Diese hat einen MPP-Wert von 0,00085W über einem Widerstandswert von 8,2k$\Omega$.\\
+
+
+\textbf{Solare Wechselrichter}
+In solaren Wechselrichtern sind MPP-Tracker installiert, welche eine Regelung zur maximalen Leistungsausbeute ermöglichen. Dies ist nötig, da die Solarzelle bei unterschiedlichen Bestrahlungstärken unterschiedliche optimale Betriebspunkte besitzt.
+Das Vorgehen ist hier wie folgt:
+\begin{enumerate}
+ \item Speichern der aktuellen Leistung
+ \item Änderung der Steuergröße
+ \item kleine Pause
+ \item Vergleich der Leistung mit der zuvor gemessenen, wenn die Aktuelle größer ist, wird diese gespeichert
+ \item Korrektur der Steuergröße
+ \item Fortfahren mit Punkt 3
+\end{enumerate}
+
+
+
+
+\section{Langzeitmessung}
+Die Langzeitmessung erfolge über einen Zeitraum von 2 Stunden. Sie wurde am 05.12.2015 von 13:00 - 15:00 in Mosbach durchgeführt. Das Wetter in diesem Zeitraum war überwiegend sonnig, mit leichter Bewölkung.
+Wie man deutlich erkennen kann fällt die Leistung gegen Ende der Messung deutlich ab, was zum einen an zunehmender Bewölkung liegt und zum anderen auch daran, dass die Solarzelle nicht mehr komplett von der Sonne bestrahlt wurde.\\ 
+Die Grafik zeigt die Leistungskurve, die aus der Langzeitmessung hervorgegangen ist.
+\begin{center}
+\includegraphics[width=0.95\textwidth]{Leistungskurve.png}
+\end{center}
+Das Skript zur Erstellung der Grafik lässt sich auf folgende Art und Weise beschreiben:\\
+Zunächst importiert man die Daten aus der Messung, die mithilfe von LENLab erstellt wurden.Der Widerstand war über die komplette Messdauer konstant 1k Ohm. Somit lässt sich auch die Stromstärke leicht berechnen. Aus Spannung $U$ und Stromstärke $I$ kann man nach $P = U \cdot I$ die Leistung $P$ berechnen. Um die Gesamtleistung $P_{ges}$ zu berechnen, nutzt man in Matlab den Befehl $nanmean$ der den Mittelwert aller Werte der Leistung bildet und dabei ungültige Werte ignoriert, dies war notwendig, da bei der Aufbereitung der Daten mit Excel einige ungültige Daten entstanden sind. Dieser Mittelwert wird dann mit der Anzahl der Messwerte multipliziert, welche der Dauer der Messung in Sekunden entspricht, so dass man die Gesamtleistung $P_{ges}$ erhält, welche  174.53 Watt beträgt.\\
+
+Interpretiert man nun die Auswertung, so lässt sich schlussfolgern, dass vorerst die Lichtintensität die Energiegewinnung maßgeblich beeinflusst. Aber auch der Einfallswinkel spielt eine wesentliche Rolle, da die Direktstrahlung wirksamer ist, als die Diffusstrahlung (reflektierte Strahlung). 
+
+\section{Energiespeicherung}
+\subsection{Berechnungen}
+\textbf{Theorie zum Laden und Entladen eines Kondensators:\\}
 Ladevorgang\\
 Betrachten wir eine Serienschaltung mit einer Gleichstromquelle, einem Schalter, einem Vorwiderstand und einem Kondensator. 
 Zum Zeitpunkt $t = 0$ ist der Kondensator ungeladen. Das heißt, dass die volle Spannung $U$ am Widerstand anliegt. Durch ihn fließt der Ladestrom $I_C$. Nur zu diesem Zeitpunkt ist der Ladestrom maximal.\\
@@ -65,9 +237,11 @@ C &= \text{Kapazität}\\
 I &= \text{Stromstärke}\\
 I_0 &= \text{Anfangsstromstärke}\\
 \end{align*}
-
-
-
-
+\textbf{Berechnung der Zeitkonstanten mithilfe einer Strahlungsquelle}\\
+Zur Berechnung der Zeitkonstanten $\tau$ werden die Messergebnisse aus Punkt 2.2 der 200W Glühbirne entnommen. Diese hat ihrem MPP von 0,002 Watt über einem Widerstandswert von 8,2k$\Omega$.\\
+Die Formel zu Berechnung von $\tau$ sieht folgendermaßen aus:\\
+\begin{center}
+$\tau = R \cdot C$
+\end{center}
 
 
